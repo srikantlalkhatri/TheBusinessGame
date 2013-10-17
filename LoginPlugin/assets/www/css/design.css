@@ -1,0 +1,25 @@
+.content {
+    display: -moz-box;
+    -moz-box-orient: horizontal;
+    -moz-box-pack: center;
+    -moz-box-align: center;
+    display: -webkit-box;
+    -webkit-box-orient: horizontal;
+    -webkit-box-pack: center;
+    -webkit-box-align: center;
+    width: 400px;
+    height: 200px;
+    padding: 20px;
+   
+}
+.box1 {
+    
+    padding: 10px;
+}
+.box2 {
+    -moz-box-flex: 1;
+    -webkit-box-flex: 1;
+}
+.box3 {
+    padding: 20px;
+}@CHARSET "ISO-8859-1";

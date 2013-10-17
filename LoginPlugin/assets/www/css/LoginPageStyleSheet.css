@@ -1,0 +1,94 @@
+@charset "utf-8";
+/* CSS Document */
+
+
+#PageTitle {
+	padding: 5px;
+	margin: 10px 0 10px 0;
+	text-shadow: 3px 3px 0 #d8d8dc;
+}
+
+#LoginBox {
+	height: 40%;
+	padding: 5px;
+	margin: 0 0 20px 0;
+}
+
+#loginForm {
+	height: 40%;
+	padding: 5px;
+	margin: 0 0 2px 0;
+}
+
+#UsernameSection {
+	padding: 5px;
+	margin: 0 0 0 5px;
+}
+
+#PasswordSection {
+	padding: 5px;
+	margin: 35px 0 0 5px;
+}
+
+.LoginBoxText {
+	font-family: "Cooper Std Black", "Arial Black", Arial, sans-serif;
+	color: #054792;
+	font-size: 16px;
+	text-shadow: 1px 1px 0 #d8d8dc;
+	margin-bottom: 2px;
+}
+
+.TextField {
+	background-color: white;
+	margin: 10px 0 0 0;
+	width: 85%;
+	height: 30px;
+	padding: 2px;
+}
+
+#SignUpSection {
+	padding: 2px;
+	margin: 50px 0 60px 0;
+	text-align: center;
+}
+
+#SignUpSection a {
+	color: #054792;
+	font-size: 20px;
+	font-family: "Cooper Std Black", "Arial Black", Arial, sans-serif;
+}
+
+.PageText {
+	font-family: "Cooper Std Black", "Arial Black", Arial, sans-serif;
+	font-size: 20px;
+	text-align: center;
+	color: #7b0304;
+	text-shadow: 3px 3px 0 #d8d8dc;
+}
+
+/* #LoginButtonDiv {
+	background-color: #c72904;
+	border-radius: 5px;
+	padding: 2px;
+	width: 40%;
+	height: 25px;
+	margin: 0 0 5px 5px;
+	box-shadow: 2px 2px 1px grey;
+}
+
+
+#loginButton {
+	background-color: #c72904;
+}
+ */
+.LoginText {
+	text-align: center;
+	font-family: "Cooper Std Black", "Arial Black", Arial, sans-serif;
+	color: white;
+	margin-top: 3px;
+	text-shadow: 1px 1px 0 #d8d8dc;  
+}
+
+.SignUpText {
+	
+}

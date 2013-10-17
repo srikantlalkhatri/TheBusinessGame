@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<!--
+    Licensed to the Apache Software Foundation (ASF) under one
+    or more contributor license agreements.  See the NOTICE file
+    distributed with this work for additional information
+    regarding copyright ownership.  The ASF licenses this file
+    to you under the Apache License, Version 2.0 (the
+    "License"); you may not use this file except in compliance
+    with the License.  You may obtain a copy of the License at
+
+    http://www.apache.org/licenses/LICENSE-2.0
+
+    Unless required by applicable law or agreed to in writing,
+    software distributed under the License is distributed on an
+    "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+     KIND, either express or implied.  See the License for the
+    specific language governing permissions and limitations
+    under the License.
+-->
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <meta name="format-detection" content="telephone=no" />
+        <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width, height=device-height, target-densitydpi=device-dpi" />
+        <link rel="stylesheet" type="text/css" href="css/index.css" />
+        <link rel="stylesheet" href="css/jquerymobile132.css">
+		<link rel="stylesheet" href="css/MainStyleSheet.css">
+		<link rel="stylesheet" href="css/LoginPageStyleSheet.css">
+		<link rel="stylesheet" href="css/design.css">
+        <title>The Business Game</title>
+        <script type="text/javascript" src="cordova.js"></script>
+        <script type="text/javascript" src="js/jquery1102.js"></script>
+		<script type="text/javascript" src="js/jquerymobile132.js"></script>
+    </head>
+    <body>
+        
+        <script type="text/javascript" src="js/LoginPlugin.js"></script>
+		
+		<script type="text/javascript" src="js/login.js"></script>
+		<script type="text/javascript" src="js/index.js"></script>
+		
+        <script type="text/javascript">
+            app.initialize();
+        </script>
+        
+        <div data-role="page" id="loginPage">
+		<div id="MainHeader">
+			<h1 class="SiteTitle">THE BUSINESS GAME</h1>
+			<img src="img/globe-red.png" class="SiteLogo" />
+		</div>
+
+		<div id="PageTitle">
+			<p class="PageText">Login to your account & Start Playing... !</p>
+		</div>
+
+		<!--  <div id="loginFormDiv"> -->
+		<form id="loginForm">
+			<p class="LoginBoxText">Username</p>
+			<input id="username" name="uid_r" type="text" value=""
+				data-corners="false" />
+			<p class="LoginBoxText">Password</p>
+			<input id="password" name="pwd_r" type="password" value=""
+				data-corners="false" /> <input type="image"
+				src="./img/LoginButton_Small.png" data-role="button"
+				id="loginButton" style="padding-bottom: 15px" />
+
+			<!-- 			<div id="LoginButtonDiv">
+				<button id="loginButton" data-inline="true" data-corners="false">LOGIN</button>
+			</div>
+ -->
+		</form>
+		<!--  </div> -->
+
+		<div id="SignUpSection">
+			<!-- <p class="PageText">Don't have an account yet ?</p> -->
+			<a href="#signUpPage" data-rel="dialog" data-inline="true">Don't
+				have an Account yet ?</a>
+		</div>
+
+
+		<div id="MainFooter">
+			<div class="LeftFooterText">
+				<p>&copy; All Rights Reserved</p>
+			</div>
+
+			<div class="RightFooterText">
+				<p>The Business Game</p>
+			</div>
+		</div>
+
+	</div>
+	<!-- Forgot password dialog -->
+	<div data-role="page" id="forgotpasswordDialog">
+		<div data-role="header" data-theme="b">
+			<h3>Forgot Password</h3>
+		</div>
+		<div data-role="content" id="forgotpasswordContent">
+			<form id="forgotpasswordForm" class="validate">
+				<div class="ui-block-b" id="cal">
+					<input id="emailId" name="emailid" type="email"
+						placeholder="Enter email id">
+					<div align="left">
+						<input id="emailIdBtn" name="emailid" type="button" value="OK"
+							onclick="forgotPassword();">
+
+					</div>
+				</div>
+			</form>
+		</div>
+	</div>
+
+	<!-- signup page -->
+	<div data-role="page" id="signUpPage">
+
+		<div>
+			<div id="img" class="imgDiv">
+				<img src="./img/TBG_Icon_Smaller.png" />
+			</div>
+			<div class="imgDiv labelDiv">
+				<label>Register for an account and start playing today!</label>
+			</div>
+		</div>
+
+
+
+		<!-- 		<div data-role="header" data-theme="b" data-position="fixed"> -->
+		<!-- 			<h3>WelCome to Business Game</h3> -->
+		<!-- 		</div> -->
+		<form name="signUpPage">
+
+			<div id="userNameDiv" data-role="fieldcontain">
+				<input id="userName" name="userName_r" type="text"
+					placeholder="First name" />
+			</div>
+			<div id="userNameDiv" data-role="fieldcontain">
+				<input id="userName" name="userName_r" type="text"
+					placeholder="last name" />
+			</div>
+
+			<div id="userIdDiv" data-role="fieldcontain">
+				<input id="userid" name="userId_r" type="text"
+					placeholder="Username" />
+			</div>
+
+			<div id="pwDiv" data-role="fieldcontain">
+				<input id="pwLabel" name="pwLabel_r" type="password"
+					placeholder="Password" />
+			</div>
+			<div id="cpwDiv" data-role="fieldcontain">
+				<input id="cpwLabel" name="cpwLabel_r" type="password"
+					placeholder="Confirm Password" />
+			</div>
+
+			<div id="emailDiv" data-role="fieldcontain">
+				<input id="email" name="email_r" type="text" placeholder="Email Id" />
+			</div>
+
+			<div id="phoneDiv" data-role="fieldcontain">
+				<input id="phone" name="phone_r" type="text" placeholder="Mobile No" />
+			</div>
+
+			<div id="signUpBtn" align="left">
+				<button data-theme="b" type="button" id="signUPButton">Sign
+					Up</button>
+			</div>
+		</form>
+	</div>
+
+	
+        
+    </body>
+</html>
